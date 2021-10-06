@@ -20,7 +20,8 @@
                 <DataGridTextColumn Header="Lastname" Binding="{Binding Lastname}" />
                 <DataGridTextColumn Header="Firstname" Binding="{Binding Firstname}" />
                 <DataGridTextColumn Header="Surname" Binding="{Binding Surname}" />
-                <DataGridTextColumn Header="Gender" Binding="{Binding Gender}" />
+                <DataGridTextColumn Header="Full name" Binding="{Binding FullName}" />
+                <DataGridTextColumn Header="Gender Id" Binding="{Binding GenderId}" />
                 <DataGridTextColumn Header="Birthday" Binding="{Binding Birthday}" />
                 <DataGridTextColumn Header="Phone home" Binding="{Binding PhoneHome}" />
                 <DataGridTextColumn Header="Phone mobil" Binding="{Binding PhoneMobil}" />
@@ -29,6 +30,11 @@
                 <DataGridTextColumn Header="Street" Binding="{Binding Street}" />
                 <DataGridTextColumn Header="House" Binding="{Binding House}" />
                 <DataGridTextColumn Header="Apartment" Binding="{Binding Apartment}" />
+                <DataGridTextColumn Header="Alt address" Binding="{Binding AltAddress}" />
+                <DataGridTextColumn Header="Card type" Binding="{Binding CardType}" />
+                <DataGridTextColumn Header="Ownerguid" Binding="{Binding Ownerguid}" />
+                <DataGridTextColumn Header="Cardper" Binding="{Binding Cardper}" />
+                <DataGridTextColumn Header="Turnover" Binding="{Binding Turnover}" />
             </DataGrid.Columns>
         </DataGrid>
 

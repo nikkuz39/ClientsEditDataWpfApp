@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClientsEditDataWpfApp"
         mc:Ignorable="d"
-        Title="Editor" Height="700" Width="300">
+        Title="Editor" Height="700" Width="500">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
@@ -20,49 +20,61 @@
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="80" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
-        <TextBlock Text="Card code:" VerticalAlignment="Center" />
-        <TextBlock Text="Start date:" Grid.Row="1" VerticalAlignment="Center" />
-        <TextBlock Text="Finish date:" Grid.Row="2" VerticalAlignment="Center" />
-        <TextBlock Text="Lastname:" Grid.Row="3" VerticalAlignment="Center" />
-        <TextBlock Text="Firstname:" Grid.Row="4" VerticalAlignment="Center" />
-        <TextBlock Text="Surname:" Grid.Row="5" VerticalAlignment="Center" />
-        <TextBlock Text="Gender:" Grid.Row="6" VerticalAlignment="Center" />
-        <TextBlock Text="Birthday:" Grid.Row="7" VerticalAlignment="Center" />
-        <TextBlock Text="Phone home:" Grid.Row="8" VerticalAlignment="Center" />
-        <TextBlock Text="Phone mobil:" Grid.Row="9" VerticalAlignment="Center" />
-        <TextBlock Text="Email:" Grid.Row="10" VerticalAlignment="Center" />
-        <TextBlock Text="City:" Grid.Row="11" VerticalAlignment="Center" />
-        <TextBlock Text="Street:" Grid.Row="12" VerticalAlignment="Center" />
-        <TextBlock Text="House:" Grid.Row="13" VerticalAlignment="Center" />
-        <TextBlock Text="Apartment:" Grid.Row="14" VerticalAlignment="Center" />
+        <TextBlock Text="Card code:" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Start date:" Grid.Row="1" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Finish date:" Grid.Row="2" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Lastname:" Grid.Row="3" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Firstname:" Grid.Row="4" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Surname:" Grid.Row="5" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Full name:" Grid.Row="6" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Gender Id:" Grid.Row="7" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Birthday:" Grid.Row="8" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Phone home:" Grid.Row="9" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Phone mobil:" Grid.Row="10" VerticalAlignment="Center" Margin="5" />
 
-        <TextBox Text="{Binding CardCode}" Grid.Column="1" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
-        <TextBox Text="{Binding StartDate}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
-        <TextBox Text="{Binding FinishDate}" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
-        <TextBox Text="{Binding Lastname}" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
-        <TextBox Text="{Binding Firstname}" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
-        <TextBox Text="{Binding Surname}" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
-        <TextBox Text="{Binding Gender}" Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
-        <TextBox Text="{Binding Birthday}" Grid.Column="1" Grid.Row="7" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
-        <TextBox Text="{Binding PhoneHome}" Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
-        <TextBox Text="{Binding PhoneMobil}" Grid.Column="1" Grid.Row="9" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
-        <TextBox Text="{Binding Email}" Grid.Column="1" Grid.Row="10" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
-        <TextBox Text="{Binding City}" Grid.Column="1" Grid.Row="11" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
-        <TextBox Text="{Binding Street}" Grid.Column="1" Grid.Row="12" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
-        <TextBox Text="{Binding House}" Grid.Column="1" Grid.Row="13" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
-        <TextBox Text="{Binding Apartment}" Grid.Column="1" Grid.Row="14" VerticalAlignment="Center" Height="20" Width="100" Margin="5" />
+        <TextBlock Text="Email:" Grid.Column="2" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="City:" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Street:" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="House:" Grid.Column="2" Grid.Row="3" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Apartment:" Grid.Column="2" Grid.Row="4" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Alt address:" Grid.Column="2" Grid.Row="5" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Card type:" Grid.Column="2" Grid.Row="6" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Ownerguid:" Grid.Column="2" Grid.Row="7" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Cardper:" Grid.Column="2" Grid.Row="8" VerticalAlignment="Center" Margin="5" />
+        <TextBlock Text="Turnover:" Grid.Column="2" Grid.Row="9" VerticalAlignment="Center" Margin="5" />       
 
-        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="15" Grid.ColumnSpan="2">
+        <TextBox Text="{Binding CardCode}" Grid.Column="1" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding StartDate}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding FinishDate}" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding Lastname}" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding Firstname}" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding Surname}" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding FullName}" Grid.Column="1" Grid.Row="6" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding GenderId}" Grid.Column="1" Grid.Row="7" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding Birthday}" Grid.Column="1" Grid.Row="8" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding PhoneHome}" Grid.Column="1" Grid.Row="9" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding PhoneMobil}" Grid.Column="1" Grid.Row="10" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+
+        <TextBox Text="{Binding Email}" Grid.Column="3" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding City}" Grid.Column="3" Grid.Row="1" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding Street}" Grid.Column="3" Grid.Row="2" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding House}" Grid.Column="3" Grid.Row="3" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding Apartment}" Grid.Column="3" Grid.Row="4" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding AltAddress}" Grid.Column="3" Grid.Row="5" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding CardType}" Grid.Column="3" Grid.Row="6" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding Ownerguid}" Grid.Column="3" Grid.Row="7" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding Cardper}" Grid.Column="3" Grid.Row="8" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+        <TextBox Text="{Binding Turnover}" Grid.Column="3" Grid.Row="9" VerticalAlignment="Center" Height="20" Width="150" Margin="5" />
+
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="11" Grid.ColumnSpan="4">
             <Button IsDefault="True" Click="EditorClientAccept_Click" Height="20" Width="50" Margin="5" Content="Ok" />
             <Button IsCancel="True" Height="20" Width="50" Margin="5" Content="Cancel" />
         </StackPanel>
