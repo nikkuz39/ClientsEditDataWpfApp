@@ -9,7 +9,29 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 <Cards>
-	<Card CARDCODE="9999002655657" STARTDATE="2020-07-15" FINISHDATE="" LASTNAME="" FIRSTNAME="" SURNAME="" FULLNAME="" GENDERID="3" BIRTHDAY="" PHONEHOME="" PHONEMOBIL="" EMAIL="" CITY="" STREET="" HOUSE="" APARTMENT="" ALTADDRESS="" CARDTYPE="" OWNERGUID="92E74B8A-C6A9-11EA-8DF5-B42E99C93B3E" CARDPER="1" TURNOVER="1518.55"/>
+	<Card 
+	      CARDCODE="9999002655657" 
+	      STARTDATE="2020-07-15" 
+	      FINISHDATE="" 
+	      LASTNAME="" 
+	      FIRSTNAME="" 
+	      SURNAME="" 
+	      FULLNAME="" 
+	      GENDERID="3" 
+	      BIRTHDAY="" 
+	      PHONEHOME="" 
+	      PHONEMOBIL="" 
+	      EMAIL="" 
+	      CITY="" 
+	      STREET="" 
+	      HOUSE="" 
+	      APARTMENT="" 
+	      ALTADDRESS="" 
+	      CARDTYPE="" 
+	      OWNERGUID="92E74B8A-C6A9-11EA-8DF5-B42E99C93B3E" 
+	      CARDPER="1" 
+	      TURNOVER="1518.55"
+	/>
 </Cards>
 
 Задача. Написать программу, которая позволяет:
@@ -19,3 +41,7 @@
 
 Само приложение можно делать на чем угодно (с использованием языка C#. Можно веб, можно
 Windows Forms, для загрузки данных приемлемо консольное приложение).
+
+Решение:
+1. В данном репозитории - WPF приложение: внесение, редактирование, удаление и загрузка данных из файла XML.
+2. Консольное приложение для загрузки данных из XML файла в SQL (файл XML перекидывается на UploadXMLConsoleApp.exe и данные из файла передаются в базу данных) - ссылка на GitHub https://github.com/nikkuz39/UploadXMLConsoleApp.git
